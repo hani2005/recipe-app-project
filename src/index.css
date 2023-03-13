@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.heading h1 {
+  color: #030e12;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  padding-top: 2rem;
+  margin: 1rem;
+}
+
+.search-bar {
+  margin: 1rem 0;
+  width: 400px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  padding: 0.3rem 1rem;
+}
+
+.container {
+  width: 80%;
+  margin: 25px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 2rem;
+}
+
+.card {
+  width: 180px;
+  border-radius: 1rem;
+  background-color: #cc91a7;
+  padding: 5px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card h3 {
+  color: white;
+  font-size: 18px;
+}
+
+.content img {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.content {
+  width: 900px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.content .inner-content {
+  color: #cc91a7;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.content .inner-content h1 {
+  color: black;
+}
+
+.content .inner-content h3 {
+  color: black;
+}
+
+.recipe-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 2rem 0 2rem;
+  padding-bottom: 2rem;
+}
+
+.ingredients,
+.instructions {
+  flex-basis: 50%;
+  text-align: justify;
+}
+
+.ingredients h2,
+.instructions h2 {
+  color: #cc91a7;
+}
+
+.ingredients h4 {
+  margin-top: 1.5rem;
+  font-weight: bold;
+}
+
+.indexContainer {
+  display: flex;
+  margin: 2.5rem 0;
+}
+
+.numBox {
+  width: 50px;
+  height: 40px;
+  background-color: #cc91a7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 0 5px 0 5px;
+}
+
+.header img {
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 1%;
+}
+
+.header {
+  position: relative;
+  margin-bottom: 4rem;
+  padding-bottom: 6rem;
+  padding-top: 6rem;
+  z-index: 1;
+}
+
+.header h1 {
+  color: white;
+}
+
+.header h4 {
+  color: white;
+}
+
+.categories-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.categories img {
+  width: 150px;
+  height: 100px;
+}
+
+.categories-title {
+  border-bottom: 5px solid #cc91a7;
+  width: 160px;
+  font-size: 2rem;
+  margin: 5rem 0 3rem 1rem;
+}
+
+.suggested {
+  margin: 0 0 3rem 1rem;
+  border-bottom: 5px solid #cc91a7;
+  width: 25rem;
+  font-size: 2rem;
+}
