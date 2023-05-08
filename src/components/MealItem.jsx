@@ -1,8 +1,9 @@
 import React from "react"
 import { useNavigate } from "react-router-dom"
+
 const MealItem = ({ data }) => {
-  
   let navigate = useNavigate()
+  
   return (
     <>
       {!data
@@ -16,6 +17,7 @@ const MealItem = ({ data }) => {
               >
                 <img src={item.strMealThumb} alt="" />
                 <h3>{item.strMeal}</h3>
+                <p>Click to view Instructions</p>
               </div>
             )
           })}

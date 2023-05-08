@@ -78,7 +78,11 @@ const CategoryFilter = ({ categoryIndex }) => {
     <>
       {categories.map((category) => {
         return (
-          <div className="categories" key={category.id} onClick={() => categoryIndex(category.name)}>
+          <div
+            className="categories"
+            key={category.id}
+            onClick={() => categoryIndex(category.name)}
+          >
             <img src={category.img} alt={category.name} />
             <h3>{category.name}</h3>
           </div>
