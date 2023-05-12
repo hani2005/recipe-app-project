@@ -89,7 +89,7 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  width: 900px;
+  max-width: 900px;
   margin-top: 2rem;
 }
 
@@ -418,7 +418,9 @@ body {
 }
 
 @media screen and (max-width: 920px) {
-  
+  .content-header {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 880px) {
@@ -437,6 +439,11 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 5rem;
+  }
+
+  .recipe-details {
+    flex-direction: column;
+    gap: 30px;
   }
 }
 
@@ -475,6 +482,74 @@ body {
 
   .header-recipe {
     display: none;
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+  }
+
+  .socials {
+    font-size: 0.9rem;
+  }
+
+  .content img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .inner-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .inner-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .inner-content h3 {
+    margin-top: 0.5rem;
+  }
+
+  .inner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .inner-content h1 {
+    font-size: 1.25rem;
+  }
+
+  .inner-content h2 {
+    font-size: 1rem;
+  }
+
+  .inner-content h3 {
+    font-size: 1rem;
+  }
+
+  .inner-content {
+    margin-top: 2rem;
+  }
+
+  .ingredients h2, .instructions h2 {
+    font-size: 1.15rem;
+  }
+
+  .ingredients span {
+    font-size: 0.9rem;
+    letter-spacing: -0.5px;
+  }
+
+  .instructions p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.5px;
+  }
+
+  .instructions button {
+    font-size: 1rem;
   }
 }
 
@@ -519,5 +594,25 @@ body {
   .header-recipe2 {
     bottom: -70px;
     right: 5px;
+  }
+
+  .ingredients strong {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .inner-content h1 {
+    font-size: 0.9rem;
+  }
+
+  .inner-content h2 {
+    font-size: 0.8rem;
+  }
+
+  .inner-content h3 {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
   }
 }
