@@ -51,7 +51,7 @@ function Footer() {
       </div>
       <div className="end-footer">
         <div className="copyright">
-          Copyright &#169; Built & Designed by Hani Mohammed
+          Copyright &#169; Built & Designed by Hani Abdelkareem
         </div>
         <div className="socials">
           <AiFillInstagram />
